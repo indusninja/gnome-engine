@@ -10,11 +10,13 @@ The general functionality for the engine is arranged in to the following areas:
 - Other Utilities
 
 ## MiniGolf
+![MiniGolf Game](images/MiniGolf-level-1-lo.png?raw=true)
 This is a sample game for the engine. The game is laid out as a series of holes with the par score that the player needs to achieve.
 
 The main application source is in the `Game\game.cpp` file. The file contains delegates for OpenGL rendering and input handling.
 	  
 ## Pool
+![Pool Game](images/8-Ball-Attack-lo.png?raw=true)
 This is another sample game for the engine, and has a 15-ball pool table layout.
 
 The main application source is in the `Game\game.cpp` file. The file contains delegates for OpenGL rendering and input handling.
@@ -31,6 +33,8 @@ And to run [Pool](#pool), execute the following command:
 ```bash
 Pool Data/course.db
 ```
+
+However, to simply the process, `.bat` files are included in the `release` versions that would run the games directly (`MiniGolf.bat` and `Pool.bat`).
 	
 ## How to play
 The games use a third-person camera to allow the player to look over the ball towards the direction where the arrow is pointing.
