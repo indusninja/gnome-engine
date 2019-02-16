@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header File">
+      <UniqueIdentifier>{b055a10d-12f0-4e81-9dee-6f9170056aba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{a69d323b-3c90-400f-a0a6-141683dbf28f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{2873d37b-113b-4c1d-bd0d-f34123de91f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Implementation">
+      <UniqueIdentifier>{5aebf9a2-bd5f-4fed-8d6f-f022283de905}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\Ball.h">
+      <Filter>Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\InputManager.h">
+      <Filter>Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\LevelManager.h">
+      <Filter>Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\MenuManager.h">
+      <Filter>Header File</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\stdafx.h">
+      <Filter>Header File</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\course.db">
+      <Filter>Data</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Ball_10_Blue_Stripe.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Ball_11_Red_Stripe.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Ball_12_Purple_Stripe.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Ball_13_Orange_Stripe.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Ball_14_Green_Stripe.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Ball_15_Maroon_Stripe.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Ball_1_Yellow.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Ball_2_Blue.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Ball_3_Red.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Ball_4_Purple.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Ball_5_Orange.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Ball_6_Green.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Ball_7_Maroon.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Ball_8_Black.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Ball_9_Yellow_Stripe.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Cue.tga">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\felt_1.tga">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game\Ball.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\game.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\InputManager.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\LevelManager.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\MenuManager.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\stdafx.cpp">
+      <Filter>Implementation</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

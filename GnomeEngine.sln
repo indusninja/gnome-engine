@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GnomeEngine4", "GnomeEngine4\GnomeEngine4.vcxproj", "{D055D8E9-7F0C-4926-93E6-1CE529CC97A8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MiniGolf", "MiniGolf\MiniGolf.vcxproj", "{02FE793C-643A-46B4-8538-EA23DCF7D675}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pool", "Pool\Pool.vcxproj", "{59FB4AEE-0C37-4761-9930-CD6A0BCBE6E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D055D8E9-7F0C-4926-93E6-1CE529CC97A8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D055D8E9-7F0C-4926-93E6-1CE529CC97A8}.Debug|Win32.Build.0 = Debug|Win32
+		{D055D8E9-7F0C-4926-93E6-1CE529CC97A8}.Release|Win32.ActiveCfg = Release|Win32
+		{D055D8E9-7F0C-4926-93E6-1CE529CC97A8}.Release|Win32.Build.0 = Release|Win32
+		{02FE793C-643A-46B4-8538-EA23DCF7D675}.Debug|Win32.ActiveCfg = Debug|Win32
+		{02FE793C-643A-46B4-8538-EA23DCF7D675}.Debug|Win32.Build.0 = Debug|Win32
+		{02FE793C-643A-46B4-8538-EA23DCF7D675}.Release|Win32.ActiveCfg = Release|Win32
+		{02FE793C-643A-46B4-8538-EA23DCF7D675}.Release|Win32.Build.0 = Release|Win32
+		{59FB4AEE-0C37-4761-9930-CD6A0BCBE6E7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{59FB4AEE-0C37-4761-9930-CD6A0BCBE6E7}.Debug|Win32.Build.0 = Debug|Win32
+		{59FB4AEE-0C37-4761-9930-CD6A0BCBE6E7}.Release|Win32.ActiveCfg = Release|Win32
+		{59FB4AEE-0C37-4761-9930-CD6A0BCBE6E7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1744B67E-ECE0-46F0-9B5E-6B486BF2E3D7}
+	EndGlobalSection
+EndGlobal

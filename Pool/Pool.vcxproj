@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{59FB4AEE-0C37-4761-9930-CD6A0BCBE6E7}</ProjectGuid>
+    <RootNamespace>EP_Games</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>15.0.28127.55</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)build\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)build\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)glut\include;$(SolutionDir)GnomeEngine4\Camera;$(SolutionDir)GnomeEngine4\Level;$(SolutionDir)GnomeEngine4\Math;$(SolutionDir)GnomeEngine4\Menu;$(SolutionDir)GnomeEngine4\Utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies);$(SolutionDir)glut\lib\glut32.lib;$(SolutionDir)build\GnomeEngine4\$(Configuration)\GnomeEngine4.lib</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)Assets\"%3b
+copy Assets "$(OutDir)Assets\"%3b
+mkdir "$(OutDir)Data\"%3b
+copy Data "$(OutDir)Data\"%3b
+copy "$(SolutionDir)glut\bin\glut32.dll" "$(OutDir)"%3b</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)glut\include;$(SolutionDir)GnomeEngine4\Camera;$(SolutionDir)GnomeEngine4\Level;$(SolutionDir)GnomeEngine4\Math;$(SolutionDir)GnomeEngine4\Menu;$(SolutionDir)GnomeEngine4\Utilities;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>%(AdditionalDependencies);$(SolutionDir)glut\lib\glut32.lib;$(SolutionDir)build\GnomeEngine4\$(Configuration)\GnomeEngine4.lib</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir "$(OutDir)Assets\"%3b
+copy Assets "$(OutDir)Assets\"%3b
+mkdir "$(OutDir)Data\"%3b
+copy Data "$(OutDir)Data\"%3b
+copy "$(SolutionDir)glut\bin\glut32.dll" "$(OutDir)"%3b</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GnomeEngine4\GnomeEngine4.vcxproj">
+      <Project>{d055d8e9-7f0c-4926-93e6-1ce529cc97a8}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game\Ball.h" />
+    <ClInclude Include="Game\InputManager.h" />
+    <ClInclude Include="Game\LevelManager.h" />
+    <ClInclude Include="Game\MenuManager.h" />
+    <ClInclude Include="Game\stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\course.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Ball_10_Blue_Stripe.tga" />
+    <Image Include="Assets\Ball_11_Red_Stripe.tga" />
+    <Image Include="Assets\Ball_12_Purple_Stripe.tga" />
+    <Image Include="Assets\Ball_13_Orange_Stripe.tga" />
+    <Image Include="Assets\Ball_14_Green_Stripe.tga" />
+    <Image Include="Assets\Ball_15_Maroon_Stripe.tga" />
+    <Image Include="Assets\Ball_1_Yellow.tga" />
+    <Image Include="Assets\Ball_2_Blue.tga" />
+    <Image Include="Assets\Ball_3_Red.tga" />
+    <Image Include="Assets\Ball_4_Purple.tga" />
+    <Image Include="Assets\Ball_5_Orange.tga" />
+    <Image Include="Assets\Ball_6_Green.tga" />
+    <Image Include="Assets\Ball_7_Maroon.tga" />
+    <Image Include="Assets\Ball_8_Black.tga" />
+    <Image Include="Assets\Ball_9_Yellow_Stripe.tga" />
+    <Image Include="Assets\Cue.tga" />
+    <Image Include="Assets\felt_1.tga" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game\Ball.cpp" />
+    <ClCompile Include="Game\game.cpp" />
+    <ClCompile Include="Game\InputManager.cpp" />
+    <ClCompile Include="Game\LevelManager.cpp" />
+    <ClCompile Include="Game\MenuManager.cpp" />
+    <ClCompile Include="Game\stdafx.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
