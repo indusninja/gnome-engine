@@ -1,0 +1,45 @@
+List of Todo for GnomeEngine v3.0
+=================================
+
+- Comments
+
+- Currently the Arrow depicting the direction of motion of the ball is not parallel 
+  to the plane, for example on planes with a slope. Also, it would be nice to be 
+  able to point the arrow up to set a vertical acceleration on the ball.
+  
+- There might be more suitable solution to the resolution of gravity along the 
+  slope, at the moment the motion down a slope is inducing a slight gitter/bounce 
+  along the y-axis.
+  
+- Falling into the hole is quite a sudden and non-interesting event. The user is 
+  just reset to the next hole without any feedback on success or glimpse of score. 
+  An animation of the ball falling into the hole would be nice.
+  
+- At the moment, the collision code is not factoring in if the ball in not moving 
+  towards the plane being tested for collision. This creates a bug when the ball, 
+  if very close to the wall will have unpredictable movement when a new acceleration 
+  is given to it (like it will travel sticking to the wall).
+  
+- Certain bugs have been successfully replicated when the ball does not correctly score
+  even when its clearly in a scoring position. The putting collision detection doesn't 
+  always work.
+  
+- The black circle representing the cup is not drawing on the plane when the tile's 
+  normal is not along the Y-axis.
+  
+- Some bugs have also been found pertaining to the ball sticking to walls. The problem 
+  seems to be related to the amount of various forces (stroke power, gravity etc).
+  
+- Menu buttons for a long menu (like the Hole list) are not placed correctly as there
+  is too much data to be organized on very limited window space. UPDATE: The problem 
+  seems to be less pronounced in full screen mode due to more screen real estate.
+  
+- Some of the menus don't yet have textual description (like help, about, etc).
+
+- User Profiles - a way for the user to save and continue their progress by linking
+  to user profiles would be a nice feature.
+  
+- High Scores - Saving the high scores of user would also be a nice feature to have.
+  
+- Assignment 4 Features as specified on
+  https://blog.itu.dk/MENP-E2009/assignments/programming-assignment-4/

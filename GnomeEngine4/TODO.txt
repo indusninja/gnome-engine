@@ -1,0 +1,21 @@
+List of Todo for GnomeEngine v4.0
+=================================
+
+- Comments
+  
+- The black circle representing the cup is not drawing on the plane when the tile's 
+  normal is not along the Y-axis.
+  
+- Menu buttons for a long menu are not placed correctly as there is too much data 
+  to be organized on very limited window space. UPDATE: The problem seems to be less 
+  pronounced in full screen mode due to more screen real estate.
+  
+- Textual description for menus by way of text fields.
+
+- User Profiles - a way for the user to save and continue their progress by linking
+  to user profiles would be a nice feature.
+  
+- High Scores - Saving the high scores of user would also be a nice feature to have.
+
+- TGA Loader - check if the TGA loader is truncating data by assuming data read is 
+  always square (some px X some px).
